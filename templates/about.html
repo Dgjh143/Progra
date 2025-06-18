@@ -1,34 +1,22 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Sobre Nosotros</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="{% url "about" %}" >about</a></li>
-                <li><a href="{% url "contact" %}">Contact</a></li>
-                <li><a href="{% url "login" %}">Login</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h1>Nuestra mision</h1>
-            <p>Bienvenido a Core Admin, tu sistema de gestión para el año 2025.</p>
-            <p>En esta sección, te contamos más sobre nuestra misión y visión.</p>
-        </section>
-        <section>
-            <h2>Visión</h2>
-            <p>Ser el sistema de gestión más confiable y eficiente del mercado.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Core Admin. Todos los derechos reservados.</p>
-    </footer>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}
+<title>Sobre Nosotros - Core Admin 2025</title>
+{% endblock title %}
+
+{% block content %}
+<section>
+    <p>Bienvenido a Core Admin, tu sistema de gestión para el año 2025.</p>
+    <h1>Nuestra Misión</h1>
+    <p>Nuestra mision es en core admin ser el sistema mas eficaz y confiable</p>
+</section>
+
+<section>
+    <h2>Visión</h2>
+    <p>Ser el sistema de gestión más confiable y eficiente del mercado.</p>
+</section>
+{% endblock content %}
+
+{% block footer %}
+<p>&copy; 2025 Core Admin. Todos los derechos reservados.</p>
+{% endblock footer %}
